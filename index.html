@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THCANDELS — Luxusní svíčky, co tě zhulí</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- smoke canvas pozadí -->
+  <canvas id="smoke-canvas"></canvas>
+
+  <!-- header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">THC<span class="logo-accent">ANDELS</span></a>
+      <nav class="nav">
+        <a href="#kolekce">Kolekce</a>
+        <a href="#proces">Proces</a>
+        <a href="#vune">Vůně</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <a href="#kolekce" class="btn btn-ghost nav-cta">Prohlédnout</a>
+      <button class="burger" id="burger" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#kolekce">Kolekce</a>
+      <a href="#proces">Proces</a>
+      <a href="#vune">Vůně</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-glow"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow" data-reveal>Edice 04 — Midnight Haze</p>
+      <h1 class="hero-title" data-reveal>
+        Zapal si <em>klid</em>.<br>
+        Nech si <span class="gold-text">zhulit</span> večer.
+      </h1>
+      <p class="hero-sub" data-reveal>
+        Ručně lité sójové svíčky s konopnou terpenovou vůní, zlatým víčkem
+        a vůní, která se line pomalu — jako dobrý kouř v tichém pokoji.
+        Žádný THC. Jen ten pocit.
+      </p>
+      <div class="hero-cta" data-reveal>
+        <a href="#kolekce" class="btn btn-primary">Vybrat svíčku</a>
+        <a href="#proces" class="btn btn-outline">Jak se to dělá</a>
+      </div>
+      <div class="hero-stats" data-reveal>
+        <div class="stat"><span class="stat-num" data-count="42">0</span><span class="stat-label">hodin hoření</span></div>
+        <div class="stat"><span class="stat-num" data-count="100">0</span><span class="stat-label">% sójový vosk</span></div>
+        <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">unikátních vůní</span></div>
+      </div>
+    </div>
+    <div class="hero-candle" aria-hidden="true">
+      <div class="candle-jar">
+        <div class="candle-flame">
+          <div class="flame-core"></div>
+          <div class="flame-glow"></div>
+        </div>
+        <div class="candle-wax"></div>
+        <div class="candle-label">
+          <span class="candle-label-top">THCANDELS</span>
+          <span class="candle-label-mid">Midnight Haze</span>
+          <span class="candle-label-bot">No. 04</span>
+        </div>
+      </div>
+      <div class="smoke-wisp"></div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Ruční výroba</span><span>•</span>
+      <span>Konopný terpen</span><span>•</span>
+      <span>Sójový vosk</span><span>•</span>
+      <span>Dřevěný knot</span><span>•</span>
+      <span>Limitované edice</span><span>•</span>
+      <span>Ruční výroba</span><span>•</span>
+      <span>Konopný terpen</span><span>•</span>
+      <span>Sójový vosk</span><span>•</span>
+      <span>Dřevěný knot</span><span>•</span>
+      <span>Limitované edice</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- KOLEKCE -->
+  <section class="collection" id="kolekce">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-reveal>Kolekce</p>
+        <h2 class="section-title" data-reveal>Vyber si svůj <span class="gold-text">trip</span></h2>
+        <p class="section-sub" data-reveal>Šest vůní, šest nálad. Každá svíčka hoří 40–45 hodin v matném skleněném kelímku se zlatým víčkem.</p>
+      </div>
+
+      <div class="product-grid">
+
+        <article class="product-card" data-reveal data-tilt>
+          <div class="card-glow"></div>
+          <div class="product-jar product-jar--haze">
+            <div class="product-flame"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-no">No. 01</span>
+            <h3>Purple Haze</h3>
+            <p>Levandule, borovice a sladký citrus. Pro večery, kdy si potřebuješ vyčistit hlavu.</p>
+            <div class="product-tags">
+              <span>Relax</span><span>Levandule</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">690 Kč</span>
+              <button class="btn btn-small" data-add="Purple Haze">Do košíku</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal data-tilt>
+          <div class="card-glow"></div>
+          <div class="product-jar product-jar--og">
+            <div class="product-flame"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-no">No. 02</span>
+            <h3>OG Kush Candle</h3>
+            <p>Hluboká dřevitá vůně s nádechem pepře a borovice. Klasika v zlatém kabátku.</p>
+            <div class="product-tags">
+              <span>Bestseller</span><span>Dřevo</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">790 Kč</span>
+              <button class="btn btn-small" data-add="OG Kush Candle">Do košíku</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal data-tilt>
+          <div class="card-glow"></div>
+          <div class="product-jar product-jar--lemon">
+            <div class="product-flame"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-no">No. 03</span>
+            <h3>Lemon Diesel</h3>
+            <p>Citronová terpenová esence s jiskrou máty. Energie do ranního rituálu.</p>
+            <div class="product-tags">
+              <span>Energy</span><span>Citrus</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">690 Kč</span>
+              <button class="btn btn-small" data-add="Lemon Diesel">Do košíku</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal data-tilt>
+          <div class="card-glow"></div>
+          <div class="product-jar product-jar--midnight">
+            <div class="product-flame"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-no">No. 04</span>
+            <h3>Midnight Haze</h3>
+            <p>Černý pepř, sandalwood a tabák. Tmavá, sametová a trochu tajemná.</p>
+            <div class="product-tags">
+              <span>Signature</span><span>Sandalwood</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">890 Kč</span>
+              <button class="btn btn-small" data-add="Midnight Haze">Do košíku</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal data-tilt>
+          <div class="card-glow"></div>
+          <div class="product-jar product-jar--gelato">
+            <div class="product-flame"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-no">No. 05</span>
+            <h3>Gelato Dream</h3>
+            <p>Krémová vanilka, bobule a hashová sladkost. Voní jako pozdní víkendové ráno.</p>
+            <div class="product-tags">
+              <span>Cozy</span><span>Vanilka</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">790 Kč</span>
+              <button class="btn btn-small" data-add="Gelato Dream">Do košíku</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal data-tilt>
+          <div class="card-glow"></div>
+          <div class="product-jar product-jar--sour">
+            <div class="product-flame"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-no">No. 06</span>
+            <h3>Sour Velvet</h3>
+            <p>Zemitý mošus, kyselá zeleň a dýmová stopa. Pro klidné introspektivní noci.</p>
+            <div class="product-tags">
+              <span>Limited</span><span>Zemitá</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">990 Kč</span>
+              <button class="btn btn-small" data-add="Sour Velvet">Do košíku</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCES -->
+  <section class="process" id="proces">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-reveal>Proces</p>
+        <h2 class="section-title" data-reveal>Od semínka <span class="gold-text">k plamínku</span></h2>
+        <p class="section-sub" data-reveal>Žádné zkratky, žádné parafínové svinstvo. Jen vosk, terpeny a trpělivost.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step" data-reveal>
+          <div class="process-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4C24 4 12 16 12 26C12 33.18 17.82 39 25 39C32.18 39 38 33.18 38 26C38 16 24 4 24 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M24 39C24 39 18 33 18 27C18 22 24 16 24 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Sklizeň terpenů</h3>
+          <p>Extrahujeme aromatické terpeny z konopného květu — žádné syntetické oleje, jen rostlinná esence.</p>
+        </div>
+
+        <div class="process-step" data-reveal>
+          <div class="process-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="14" width="28" height="28" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10 22H38" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M18 14V8H30V14" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M16 30C16 30 18 33 20 30C22 27 24 33 26 30C28 27 30 33 32 30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Lití vosku</h3>
+          <p>100% sójový vosk lijeme ručně při přesné teplotě, aby vůně vydržela rovnoměrně celých 40+ hodin.</p>
+        </div>
+
+        <div class="process-step" data-reveal>
+          <div class="process-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="24" cy="26" r="16" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M24 26L30 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Dřevěný knot</h3>
+          <p>Praskající dřevěný knot dává hoření zvuk podobný malému ohni — ambientní šum, jako z vinylu.</p>
+        </div>
+
+        <div class="process-step" data-reveal>
+          <div class="process-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 8L34 8L34 30L24 40L14 30L14 8Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M14 16H34" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M20 22H28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Zlatý finish</h3>
+          <p>Matné sklo, mosazné víčko a ručně razená etiketa. Vypadá lépe na nočním stolku než ve výkladu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VŮNĚ / interaktivní výběr nálady -->
+  <section class="vibe" id="vune">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-reveal>Najdi svou vůni</p>
+        <h2 class="section-title" data-reveal>Jaká je dnes <span class="gold-text">nálada</span>?</h2>
+        <p class="section-sub" data-reveal>Klikni na náladu a my ti doporučíme tu pravou svíčku.</p>
+      </div>
+
+      <div class="vibe-picker" data-reveal>
+        <button class="vibe-btn" data-mood="relax">
+          <span class="vibe-emoji">🌙</span>
+          Vyklidnit hlavu
+        </button>
+        <button class="vibe-btn" data-mood="focus">
+          <span class="vibe-emoji">⚡</span>
+          Nahodit energii
+        </button>
+        <button class="vibe-btn" data-mood="cozy">
+          <span class="vibe-emoji">🛋️</span>
+          Zalézt do deky
+        </button>
+        <button class="vibe-btn" data-mood="deep">
+          <span class="vibe-emoji">🌑</span>
+          Jít do hloubky
+        </button>
+      </div>
+
+      <div class="vibe-result" id="vibeResult" data-reveal>
+        <div class="vibe-result-glow"></div>
+        <div class="vibe-result-content">
+          <span class="vibe-result-label">Doporučujeme</span>
+          <h3 id="vibeResultName">Vyber náladu výše ↑</h3>
+          <p id="vibeResultDesc">Naše svíčky reagují na tvůj stav — vyber si tlačítko a uvidíš, co se line ze skla.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="reviews">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-reveal>Recenze</p>
+        <h2 class="section-title" data-reveal>Slovo má <span class="gold-text">komunita</span></h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card" data-reveal>
+          <div class="stars">★★★★★</div>
+          <p>„Zapálila jsem OG Kush v pátek večer a najednou jsem byla v gauči přilepená dvě hodiny. V dobrém slova smyslu.“</p>
+          <span class="review-author">— Tereza, Brno</span>
+        </div>
+        <div class="review-card" data-reveal>
+          <div class="stars">★★★★★</div>
+          <p>„Sklo je tak hezké, že si ho po vyhoření ponechávám jako sklenici na čaj. Vůně Midnight Haze je top.“</p>
+          <span class="review-author">— David, Praha</span>
+        </div>
+        <div class="review-card" data-reveal>
+          <div class="stars">★★★★★</div>
+          <p>„Konečně svíčka, která nevoní jako umělý ovocný sprej. Lemon Diesel je přesně to ranní nakopnutí.“</p>
+          <span class="review-author">— Petra, Ostrava</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / NEWSLETTER -->
+  <section class="cta-section" id="kontakt">
+    <div class="container cta-inner" data-reveal>
+      <h2 class="cta-title">Buď první u <span class="gold-text">nové edice</span></h2>
+      <p class="cta-sub">Připoj se k seznamu a dostaneš info o nových vůních a limitovaných dropech dřív než ostatní.</p>
+      <form class="cta-form" id="ctaForm">
+        <input type="email" id="ctaEmail" placeholder="tvuj@email.cz" required />
+        <button type="submit" class="btn btn-primary">Přihlásit se</button>
+      </form>
+      <p class="cta-note" id="ctaNote">Žádný spam. Jen vůně a vibe.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo">THC<span class="logo-accent">ANDELS</span></a>
+        <p>Svíčky pro klidnou hlavu. 18+, bez THC, plně legální. Konopná vůně, žádná psychoaktivní látka.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigace</h4>
+        <a href="#kolekce">Kolekce</a>
+        <a href="#proces">Proces</a>
+        <a href="#vune">Vůně</a>
+      </div>
+      <div class="footer-links">
+        <h4>Info</h4>
+        <a href="#">Doprava a vrácení</a>
+        <a href="#">Obchodní podmínky</a>
+        <a href="#">Bezpečnost svíček</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 THCANDELS. Všechna práva vyhrazena.</span>
+      <span>Made with 🔥 and patience.</span>
+    </div>
+  </footer>
+
+  <!-- CART TOAST -->
+  <div class="toast" id="toast">
+    <span id="toastText"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
